@@ -1,0 +1,57 @@
+body{
+    margin: 0px;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(247, 227, 252);
+}
+.container{
+     width: 100%;
+     max-width: 500px;
+     background: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input[type="text"],input[type="email"]{
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+.gender input{
+    margin-left: 0;
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px;
+    margin-top: 3%;
+    width:20%;
+    background-color: #670885;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    border:#670885;
+}
+.phone{
+    margin-top: 20px;
+}
+.Department{
+    margin-top: 20px;
+}

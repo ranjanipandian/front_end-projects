@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="/submit" method="post">
+    <h1>STUDENT REGISTRATION FORM</h1>
+    <div class="form"> 
+    <label for="first_name">First Name:</label>
+    <input type="text" id="first_name" name="first_name" required>
+    </div>
+    <div class="form"> 
+    <label for="last_name">Last Name:</label>
+    <input type="text" id="last_name" name="last_name" required>
+    </div>
+    <div class="gender">
+        <h4>Gender:</h4>
+        <input type="radio" name="gender">Male</input><br>
+        <input type="radio"  name="gender">Female</input>
+    </div>
+    <div class="form"> 
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    </div>
+    <div class="country-code">
+        <label for="country-code">Country Code:</label>
+        <input type="tel" id="country-code" name="country-code" placeholder="+1" required>
+    </div>
+    <div class="phone">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" required>
+    </div>
+    <div class="college_name">
+        <h4>College Name:</h4>
+        <input type="text" id="college_name" name="college_name" required>
+    </div>
+    <div class="Degree">
+        <label for="degree">Select Degree:</label>
+        <select id="degree" name="degree" required>
+            <option value="">--Please choose an option--</option>
+            <option value="BE/B.Tech">BE/B.Tech</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+            <option value="B.com">B.com</option>
+            <option value="Bsc">Bsc</option>
+        </select>
+    </div>
+    <div class="Department">
+        <label for="department">Select Department:</label>
+        <select id="department" name="department" required>
+            <option value="">--Please choose an option--</option>
+            <option value="Cse">Computer Science and Engineering</option>
+            <option value="Aids">Artifical and Intelligence</option>
+            <option value="cbs">Cyber Security</option>
+            <option value="it">Information Technology</option>
+            <option value="finance">Finance</option>
+        </select>
+    </div>
+    <button type="submit">Submit</button>
+    </div> 
+    </form>
+</body>
+</html>
