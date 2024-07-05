@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TO-DO LIST</title>
+    <style>
+        *{
+            background-color: #d6c8fa;
+        }
+         ul{
+            list-style-type: none;
+            padding: 0;
+            background-color: black;
+         }
+         li {
+            background-color: whitesmoke; 
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        button {
+            background-color: #f14ea2;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        button:hover 
+        {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <input id="in">
+    <button onclick="add()">ADD</button>
+    <ul id="u">
+        <li>
+            ADD  YOUR THINGS HERE BELOW!!!
+            <button onclick="del(event)">DELETE</button>
+        </li>
+    </ul>
+    <script>
+        var a=document.getElementById("u");
+        var b=document.getElementById("in");
+        function add()
+        {
+            var list=document.createElement("li");
+            list.innerHTML=b.value+"<button onclick='del(event)'>DELETE</button>";
+            a.append(list);
+        }
+        function del(event)
+        {
+            event.target.parentElement.remove()
+        }
+    </script>
+</body>
+</html>
